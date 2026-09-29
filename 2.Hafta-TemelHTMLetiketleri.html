@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+    HTML5 ETİKETLERİ VE AÇIKLAMALARI
+
+1) <p> : Paragraf oluşturmak için kullanılır.
+2) <h1> - <h6> : Başlık oluşturmak için kullanılır (h1 en büyük, h6 en küçük).
+3) <span> : Satır içi alan oluşturur.
+4) <img> : Sayfaya resim ekler. (src ve alt öznitelikleri ile kullanılır.)
+5) <a> : Link (bağlantı) oluşturur. (href ile adres belirtilir.)
+6) <hr> : Yatay çizgi ekler.
+7) <br> : Satır atlar.
+8) <strong> : Kalın metin yazar.
+9) <em> / <i> : İtalik metin yazar.
+10) <u> : Altı çizili metin oluşturur.
+11) <del> : Üstü çizili metin oluşturur.
+12) <mark> : Fosforlu (vurgulu) metin yazar.
+13) <sub> : Alt simge oluşturur. (örnek: H₂O)
+14) <sup> : Üst simge oluşturur. (örnek: X²)
+15) <small> : Küçük puntoyla yazar.
+16) <blockquote> : Uzun alıntılar için kullanılır.
+17) <q> : Kısa alıntılar için kullanılır.
+18) <code> : Kod parçacıkları için kullanılır.
+19) <pre> : Biçimlendirilmiş metinleri aynı düzenle gösterir.
+20) <abbr> : Kısaltma açıklaması verir (title özelliğiyle birlikte).
+21) <cite> : Kaynak belirtmek için kullanılır.
+22) <dfn> : Terim tanımlamak için kullanılır.
+23) <kbd> : Klavye girdilerini göstermek için kullanılır.
+24) <samp> : Program çıktısı göstermek için kullanılır.
+25) <var> : Değişken belirtmek için kullanılır.
+26) <time> : Tarih ve zaman belirtmek için kullanılır.
+27) <data> : Makine tarafından okunabilir veri ekler.
+28) <bdi> : Metin yönünü bağımsız biçimde belirler.
+29) <bdo> : Metin yönünü tersine çevirmek için kullanılır.
+30) <ins> : Eklenmiş metin belirtir.
+31) <s> : Artık geçerli olmayan (silinmiş) metin belirtir.
+32) <details> : Açılır/kapanır bilgi bölümü oluşturur.
+33) <summary> : <details> etiketi içindeki özet başlıktır.
+34) <dialog> : Diyalog (açılır kutu) oluşturur.
+35) <template> : Sayfada görünmeyen HTML şablonu oluşturur.
+36) <slot> : Web bileşenlerinde yer tutucu olarak kullanılır.
+37) <figure> : Görsel veya tablo gibi bir figür tanımlar.
+38) <figcaption> : Figür başlığı oluşturur.
+39) <picture> : Farklı boyutlardaki resimleri yönetmek için kullanılır.
+40) <source> : <audio>, <video> veya <picture> içinde medya kaynağı belirtir.
+41) <track> : Video veya ses dosyalarına altyazı veya açıklama ekler.
+42) <map> : Görsel harita oluşturur.
+43) <area> : Görsel harita üzerindeki tıklanabilir alanları tanımlar.
+44) <canvas> : Grafik ve çizim yapmak için kullanılır (JavaScript ile).
+45) <svg> : Vektörel grafik oluşturmak için kullanılır.
+46) <math> : Matematiksel ifadeleri göstermek için kullanılır.
+47) <noscript> : JavaScript kapalıysa gösterilecek içerik ekler.
+48) <header> : Sayfa veya bölüm başlığı oluşturur.
+49) <nav> : Navigasyon (menü) alanı tanımlar.
+50) <main> : Ana içerik bölümünü belirtir.
+51) <section> : Mantıksal bir bölüm tanımlar.
+52) <article> : Bağımsız içerik bloğu oluşturur.
+53) <aside> : Yan içerik alanı oluşturur.lllll
+54) <footer> : Sayfa veya bölüm alt bilgisidir.
+55) <div> : Blok seviyesinde genel kapsayıcıdır.
+56) <ul> : Sırasız liste oluşturur.
+57) <ol> : Sıralı liste oluşturur.
+58) <li> : Liste öğesi belirtir.
+59) <dl> : Tanım listesi oluşturur.
+60) <dt> : Tanımlanan terimdir.
+61) <dd> : Terim açıklamasıdır.
+62) <table> : Tablo oluşturur.
+63) <caption> : Tablo başlığı ekler.
+64) <thead> : Tablo başlık satırlarını içerir.
+65) <tbody> : Tablo gövdesini içerir.
+66) <tfoot> : Tablo alt kısmını içerir.
+67) <tr> : Tablo satırı oluşturur.
+68) <th> : Tablo başlık hücresi oluşturur.
+69) <td> : Tablo veri hücresi oluşturur.
+70) <col> : Tablo sütunu belirtir.
+71) <colgroup> : Sütun gruplarını belirtir.
+72) <form> : Form alanı oluşturur.
+73) <label> : Form elemanına etiket ekler.
+74) <input> : Tek satırlı metin veya giriş alanı oluşturur.
+75) <textarea> : Çok satırlı metin kutusu oluşturur.
+76) <select> : Açılır menü oluşturur.
+77) <option> : Açılır menüde seçenek belirtir.
+78) <optgroup> : Seçenekleri gruplamak için kullanılır.
+79) <button> : Buton oluşturur.
+80) <fieldset> : Form elemanlarını gruplandırır.
+81) <legend> : Form grubu başlığı oluşturur.
+82) <output> : Form işlemi sonucunu gösterir.
+83) <datalist> : Giriş alanına öneri listesi ekler.
+84) <progress> : İlerleme çubuğu oluşturur.
+85) <meter> : Ölçüm göstergesi oluşturur.
+86) <script> : JavaScript kodlarını içerir.
+87) <style> : Dahili CSS tanımlar.
+88) <link> : Harici dosyaları bağlar (CSS, favicon vb.).
+89) <meta> : Meta verileri tanımlar (charset, viewport, açıklama vb.).
+90) <title> : Sayfa başlığını belirler.
+91) <head> : Belge başlık kısmını içerir.
+92) <body> : Belgenin görünen içeriğini içerir.
+93) <html> : HTML belgesini başlatır.
+94) <!DOCTYPE> : Belge türünü belirtir.
+
+-->
+
+<center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque mollitia sequi sapiente beatae! Esse quia est, odit suscipit inventore quae voluptatem voluptate illo facere. Possimus sit perferendis placeat quis?
+Nihil reiciendis rerum necessitatibus commodi vero consectetur magni facere. Doloribus, laboriosam, ullam assumenda nostrum quisquam eaque exercitationem est deserunt ratione ipsum similique saepe quis fugit obcaecati omnis. Saepe, neque blanditiis?
+Dicta voluptas, aliquid explicabo perferendis fuga similique obcaecati mollitia vel at nulla fugit minus inventore porro deserunt dignissimos quam architecto, sint animi ipsam qui. Minima mollitia iste non eligendi incidunt.
+Nihil, enim voluptatum. Omnis molestiae deleniti, cum cupiditate, animi et dolores reiciendis nobis unde sit veniam, magnam accusantium ullam nulla iusto impedit. Fugiat libero, culpa ipsa recusandae sit placeat! Soluta?
+Iste commodi quas blanditiis magni labore. Placeat dicta numquam fugit, rem molestias officia quia temporibus doloribus consequatur magnam adipisci velit. Molestiae tempore placeat corporis, velit earum deleniti animi a dolorum.
+Vel eum dolores veniam asperiores temporibus! Dicta ex maxime molestias unde fugiat exercitationem facere totam corporis expedita nostrum ad cumque numquam laudantium commodi id deserunt, saepe sit a inventore quia.
+Quasi nihil illo nostrum, et reiciendis voluptate quas, aliquid maiores impedit quo iure assumenda. Cupiditate quo sunt laudantium ex beatae neque, deserunt, cum nemo corporis eligendi earum, dolorem inventore officiis.
+Illum accusantium voluptatem sint eligendi cupiditate laboriosam eum hic perspiciatis aliquid suscipit ex, quidem aspernatur est aliquam debitis delectus ab minus officiis quam temporibus. Minima repellendus laboriosam aspernatur similique modi!
+Assumenda sed libero vitae dolorum architecto facere quisquam expedita perferendis! Odit cupiditate, eligendi libero error quibusdam voluptatum similique necessitatibus fugit omnis laborum! Nobis sed velit officia totam, error deleniti ut.
+Dicta nihil alias, sed illum omnis sint cum exercitationem suscipit autem, consequatur hic debitis ipsam earum a vitae odio quibusdam quae aliquid iusto quidem quasi. Ipsum laudantium iste quasi beatae?</center>
+
+<strong>BİR</strong>
+<!-- <strong> etiketi ile yazılan metinler kalın olur. -->
+<hr>
+<b>İKİ</b>
+<!-- <b> etiketi ile yazılan metinler kalın olur. -->
+<hr>
+<i>ÜÇ</i>
+<!-- <i> etiketi ile yazılan metinler italik olur. -->
+<br>
+<mark>DÖRT</mark>
+<!-- <mark> etiketi ile yazılan metinler fosforlu olur. -->
+<br>
+<em>BEŞ</em>
+<!-- <em> etiketi ile yazılan metinler italik olur. -->
+<hr>
+<del>ALTI</del>
+<!-- <del> etiketi ile yazılan metinler üstü çizili olur. -->
+<hr>
+<u>YEDİ</u>
+<!-- <u> etiketi ile yazılan metinler altı çizili olur. -->
+<hr>
+<sub>SEKİZ</sub>
+<!-- <sub> etiketi ile yazılan metinler alt simge olur. -->
+<hr>
+<em>DOKUZ</em>
+<!-- <em> etiketi ile yazılan metinler italik olur. -->
+<hr>
+<sup>ON</sup>
+<!-- <sup> etiketi ile yazılan metinler üst simge olur. -->
+<br>
+<pre>   a                       b</pre>
+<!-- <pre> etiketi ile yazılan metinler, boşluk ve satır atlamaları korunur. -->
+
+
+<!-- HTML ETİKETLERİNİ İÇ İÇE KULLANMAK -->
+Bir yazı içerisinde <strong>kalın</strong> ve <em>italik</em> metinler kullanmak mümkündür. Örneğin, bu cümlede <strong>kalın</strong> ve <em>italik</em> metinler bir arada yer almaktadır.    
+
+<!--Herhangi bir iç içe etiket sınırlaması yoktur, istenildiği gibi iç içe kullanılabilmektedir-->
+
+<p>Bu bir paragraf etiketidir. Paragraf etiketleri, metinleri paragraflar halinde düzenlemek için kullanılır. </p>  
+<p id="paragraf1">id parametresi sayesinde font-renk- boyut gibi özellikler değiştirilebilir.  </p>
+
+<!--BAŞLIK ETİKETLERİ -->
+<h1>BİRİNCİ BAŞLIK</h1>
+<h2>İKİNCİ BAŞLIK</h2>,
+<h3>ÜÇÜNCÜ BAŞLIK</h3>  
+<h4>DÖRDÜNCÜ BAŞLIK</h4>
+<h5>BEŞİNCİ BAŞLIK</h5> 
+<h6>ALTINCI BAŞLIK</h6>
+
+</body>
+</html>
